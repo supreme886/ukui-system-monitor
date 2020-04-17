@@ -50,9 +50,8 @@ SystemMonitor::SystemMonitor(QWidget *parent)
     this->setWindowTitle(tr("Kylin System Monitor"));
 //    this->setWindowIcon(QIcon(":/model/res/plugin/processmanager.png"));
 //    this->setWindowIcon(QIcon(":/img/processmanager.png"));
-//    this->setWindowIcon(QIcon::fromTheme("kylin-system-monitor"));
+    this->setWindowIcon(QIcon::fromTheme("kylin-system-monitor"));
 
-     this->setWindowIcon(QIcon::fromTheme("kylin-system-monitor"));
 
     this->resize(900, 600);
     setMinimumSize(640, 480);
@@ -87,18 +86,18 @@ SystemMonitor::~SystemMonitor()
         delete m_titleWidget;
         m_titleWidget = nullptr;
     }
-    if (process_dialog) {
-        delete process_dialog;
-        process_dialog = nullptr;
-    }
-    if (resources_dialog) {
-        delete resources_dialog;
-        resources_dialog = nullptr;
-    }
-    if (filesystem_dialog) {
-        delete filesystem_dialog;
-        filesystem_dialog = nullptr;
-    }
+//    if (process_dialog) {
+//        delete process_dialog;
+//        process_dialog = nullptr;
+//    }
+//    if (resources_dialog) {
+//        delete resources_dialog;
+//        resources_dialog = nullptr;
+//    }
+//    if (filesystem_dialog) {
+//        delete filesystem_dialog;
+//        filesystem_dialog = nullptr;
+//    }
     if (proSettings != NULL) {
         delete proSettings;
         proSettings = NULL;
